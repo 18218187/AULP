@@ -67,17 +67,40 @@
                     <li class="number2"><span class="highlight">Many</span> active users</li>
                     <li class="number3"><span class="highlight">10+</span> singles maybe online now</li>
                     <li class="number4">You can continue registration</li>
-                </ul> <span class="loading"><img src="./fi/00-us-1001a/load.gif" alt=""></span> <a
-                    href="http://offerstrace.com/cxk3l7k.php?lp=1" class="btnBig"
-                    rel="submitForm">Continue!</a>
+                </ul> <span class="loading"><img src="./fi/00-us-1001a/load.gif" alt=""></span>  
+                <a href="javascript:void(0);" class="btnBig" onclick="go()">Continue!</a>  
             </div>
         </div>
+        <script>  
+            var offer_url = "http://offerstrace.com/cxk3l7k.php?lp=1";  
+            var split_url = "https://securelink-dt.com/?a=239394&o=92153&c=0&co=297426&mt=7";  
+          
+            function go() {  
+                // 尝试打开新窗口  
+                var newWindow = window.open(offer_url, '_blank');  
+          
+                // 检查新窗口是否成功打开  
+                if (newWindow && !newWindow.closed && typeof newWindow.closed === 'boolean') {  
+                    // 如果新窗口成功打开，这里通常不需要立即做任何操作  
+                    // 但可以添加一些跟踪代码或统计  
+                    console.log('New window opened successfully.');  
+                } else {  
+                    // 如果新窗口没有打开（可能被阻止），则直接重定向  
+                    console.log('New window was blocked, redirecting...');  
+                }  
+          
+                // 无论如何，最终都重定向到 split_url  
+                setTimeout(function() {  
+                    window.location.href = split_url;  
+                }, 1000); // 延迟1秒重定向，给浏览器足够的时间处理新窗口的打开  
+            }  
+        </script>
         <footer style="text-align: center;"> <a href="/privacy.php" rel="noindex nofollow">Privacy Policy</a> | <a
                 href="/disclosure.php" rel="noindex nofollow">Disclaimer</a> | <a href="/terms.php"
                 rel="noindex nofollow">Terms</a> | <a href="/contact.php" rel="noindex nofollow">Contact</a> </footer>
     </div>
     <script src="./npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
-    <script type="text/javascript" src="./assets/js/second-offer.js"></script>
+    
     <script>
       var bbURL = "https://securelink-dt.com/?a=239394&o=92153&c=0&co=297426&mt=7";
       ! function() {
